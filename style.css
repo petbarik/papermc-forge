@@ -108,3 +108,31 @@ cursor: pointer;
 .mod-btn:hover {
 background: #60a5fa;
 }
+
+/* Mods header */
+.mods-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mods-header h2 {
+  margin: 0;
+}
+
+.studio-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #a855f7, #c084fc);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.studio-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #a855f7;
+}
