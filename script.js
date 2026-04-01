@@ -16,7 +16,7 @@ window.open(url, '_blank');
 
 function launchMod(version, modUrl) {
 const url = "https://petbarik.github.io/papermc-forge/" + version +
-"?mod=" + encodeURIComponent(modUrl);
+"?mod=" + modUrl;
 
 window.open(url, '_blank');
 }
