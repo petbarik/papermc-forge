@@ -1,25 +1,65 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper MC: Forge Launcher</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paper MC: Forge Launcher</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <label for="version">Select a version:</label>
-        <select id="version" name="version">
-        <option value="latest-beta" selected>Latest - Beta (1.0)</option>
-    </select>
-    <button onclick="openSelectedVersion()">Launch Game</button>
+
+<div class="container">
+
+  <!-- Tabs -->
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('launcher', this)">Launcher</div>
+    <div class="tab" onclick="switchTab('mods', this)">Mods</div>
+  </div>
+
+  <!-- Launcher Panel -->
+
+  <div id="launcher" class="panel active">
+    <div class="launcher">
+
+```
+  <label for="version">Select a version:</label>
+  <select id="version">
+    <option value="latest-beta" selected>Latest - Beta (1.0)</option>
+  </select>
+
+  <button onclick="openSelectedVersion()">Launch Game</button>
+
+</div>
+```
+
+  </div>
+
+  <!-- Mods Panel -->
+
+  <div id="mods" class="panel">
+    <div class="mods">
+
+```
+  <div class="mod-card">
+    <div class="mod-title">Example Mod</div>
+    <div class="mod-desc">Adds cool features</div>
+    <div class="mod-btn" onclick="launchMod('latest-beta','https://example.com/mod.foj')">
+      Install & Launch
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
-
-<script>
-function openSelectedVersion() {
-  const selector = document.getElementById('version');
-  const value = selector.value;
-  const url = "https://petbarik.github.io/papermc-forge/" + value;
-  
-  window.open(url, '_blank');
-}
-</script>

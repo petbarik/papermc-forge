@@ -1,0 +1,110 @@
+body {
+margin: 0;
+font-family: "Segoe UI", Arial;
+background: linear-gradient(135deg, #0f172a, #1e293b);
+color: white;
+}
+
+.container {
+max-width: 900px;
+margin: auto;
+padding: 20px;
+}
+
+/* Tabs */
+.tabs {
+display: flex;
+gap: 10px;
+margin-bottom: 20px;
+}
+
+.tab {
+padding: 10px 20px;
+background: #1e293b;
+border-radius: 10px;
+cursor: pointer;
+}
+
+.tab.active {
+background: #38bdf8;
+color: black;
+}
+
+/* Panels */
+.panel {
+display: none;
+}
+
+.panel.active {
+display: block;
+}
+
+/* Launcher */
+.launcher {
+background: #1e293b;
+padding: 20px;
+border-radius: 15px;
+text-align: center;
+}
+
+select, button {
+width: 100%;
+padding: 10px;
+margin-top: 10px;
+border-radius: 10px;
+border: none;
+font-size: 14px;
+}
+
+button {
+background: #22c55e;
+font-weight: bold;
+cursor: pointer;
+}
+
+button:hover {
+background: #4ade80;
+}
+
+/* Mods */
+.mods {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 15px;
+}
+
+/* Mod Card */
+.mod-card {
+background: #1e293b;
+padding: 15px;
+border-radius: 15px;
+transition: 0.2s;
+}
+
+.mod-card:hover {
+transform: scale(1.03);
+background: #334155;
+}
+
+.mod-title {
+font-size: 16px;
+font-weight: bold;
+}
+
+.mod-desc {
+font-size: 12px;
+color: #94a3b8;
+margin: 10px 0;
+}
+
+.mod-btn {
+background: #3b82f6;
+padding: 8px;
+border-radius: 8px;
+text-align: center;
+cursor: pointer;
+}
+
+.mod-btn:hover {
+background: #60a5fa;
+}
