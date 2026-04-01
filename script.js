@@ -20,7 +20,3 @@ const url = "https://petbarik.github.io/papermc-forge/" + version +
 
 window.open(url, '_blank');
 }
-
-function openStudio() {
-  window.location.href = "https://petbarik.github.io/papermc-forge/studio";
-}

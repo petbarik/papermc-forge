@@ -25,6 +25,7 @@
   <div id="launcher" class="panel active">
     <div class="launcher">
 
+```
   <label for="version">Select a version:</label>
   <select id="version">
     <option value="latest-beta" selected>Latest - Beta (1.0)</option>
@@ -33,6 +34,7 @@
   <button onclick="openSelectedVersion()">Launch Game</button>
 
 </div>
+```
 
   </div>
 
@@ -40,23 +42,40 @@
 
   <div id="mods" class="panel">
 
-     <!-- Header -->
-  <div class="mods-header">
-    <h2>Mods</h2>
-    <button class="studio-btn" onclick="openStudio()">Open Forge Studio</button>
+```
+<!-- Header -->
+<div class="mods-header">
+  <h2>Mods</h2>
+
+  <div style="display:flex; gap:10px;">
+    <!-- Open Studio (NEW TAB) -->
+    <button class="studio-btn"
+      onclick="window.open('https://petbarik.github.io/papermc-forge/studio','_blank')">
+      Open Forge Studio
+    </button>
+
+    <!-- Optional: Submit Mod -->
+    <button class="studio-btn"
+      onclick="window.open('https://github.com/petbarik/papermc-forge/pulls','_blank')">
+      Submit Mod
+    </button>
   </div>
-    
-    <div class="mods">
+</div>
+
+<!-- Mod Grid -->
+<div class="mods">
 
   <div class="mod-card">
     <div class="mod-title">Example Mod</div>
     <div class="mod-desc">Adds cool features</div>
-    <div class="mod-btn" onclick="launchMod('latest-beta','https://petbarik.github.io/papermc-forge/mods/cheese.foj')">
+    <div class="mod-btn"
+      onclick="launchMod('latest-beta','https://petbarik.github.io/papermc-forge/mods/cheese.foj')">
       Install & Launch
     </div>
   </div>
 
 </div>
+```
 
   </div>
 
